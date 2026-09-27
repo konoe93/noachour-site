@@ -3,194 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noachour | Inception</title>
+    <title>Joyeux anniversaire Maria ❤️</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo">NOACHOUR</div>
+    <section class="hero">
+        <div class="hero-content">
+            <p class="small-title">POUR MARIA</p>
 
-    <nav>
-        <a href="#accueil" class="active">Accueil</a>
-        <a href="#apropos">À propos</a>
-        <a href="#projet">Le projet</a>
-        <a href="#technologies">Technologies</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+            <h1>
+                Joyeux anniversaire<br>
+                <span>Maria</span> ❤️
+            </h1>
 
+            <p class="intro">
+                Un petit site fait spécialement pour toi,
+                parce que tu mérites une journée incroyable. (j'avoue ct hier mais tkt)
+            </p>
 
-<section id="accueil" class="hero">
-
-    <div class="hero-left">
-
-        <div class="small-title">
-            ÉCOLE 42 — PROJET
+            <button class="start-btn" onclick="scrollToMessage()">
+                Voir ton message ↓
+            </button>
         </div>
+    </section>
 
-        <h1>Inception</h1>
 
-        <p>
-            Mon environnement web complet avec Docker :<br>
-            Nginx, WordPress, MariaDB, PHP-FPM et HTTPS.<br>
-            Un projet DevOps réalisé dans le cadre de l'école 42.
-        </p>
+    <section class="message" id="message">
 
-        <div class="buttons">
-            <a href="#projet" class="btn blue">
-                Voir le projet →
-            </a>
+        <h2>Maria, écoute bien ta race.</h2>
 
-            <a href="#apropos" class="btn transparent">
-                À propos de moi
-            </a>
+        <div class="letter">
+
+            <p>
+                Deja arrete de regarder une video quand on est en appel
+                sinon je te bz ta race, ensuite si un jour tu me trompes,
+                sache que <strong> je te met la plus grosse laser du monde </strong>reste officiellement
+                bref je t'aime qu'allah nous unisse vite !!!!!!
+            </p>
+
+            <p>
+                Et concernant la guerre avec ma mère bah arrete et vite la
+                sinon mon pere te met une <strong>« golden »</strong>
+            </p>
+
+            <p>
+                Je t'aime énormément et je suis vraiment heureux
+                de t'avoir dans ma vie ❤️ (ouiiaouiiiai)
+            </p>
+
+            <p class="signature">
+                Joyeux anniversaire ❤️<br>
+                <strong>Noé</strong>
+            </p>
+
         </div>
+    </section>
 
-    </div>
 
+    <section class="counter-section">
 
-    <div class="terminal">
+        <p class="section-label">DEPUIS LE 7 MAI ❤️</p>
 
-        <div class="terminal-top">
-            <span class="red"></span>
-            <span class="yellow"></span>
-            <span class="green"></span>
-        </div>
+        <h2>Le temps passé avec toi.</h2>
 
-        <div class="terminal-content">
+        <div class="counter">
 
             <div>
-                <span class="white">docker</span>
-                <span class="yellow-text">compose</span>
-                <span class="white">-f srcs/docker-compose.yml up -d</span>
+                <span id="days">0</span>
+                <small>JOURS</small>
             </div>
 
-            <p>✔ NGINX <span>[OK]</span></p>
-            <p>✔ WordPress <span>[OK]</span></p>
-            <p>✔ MariaDB <span>[OK]</span></p>
-            <p>✔ PHP-FPM <span>[OK]</span></p>
-            <p>✔ SSL (HTTPS) <span>[OK]</span></p>
+            <div>
+                <span id="hours">0</span>
+                <small>HEURES</small>
+            </div>
+
+            <div>
+                <span id="minutes">0</span>
+                <small>MINUTES</small>
+            </div>
+
+            <div>
+                <span id="seconds">0</span>
+                <small>SECONDES</small>
+            </div>
 
         </div>
-
-    </div>
-
-</section>
+    </section>
 
 
-<section id="technologies" class="stack">
+    <section class="gift">
 
-    <h2>Stack du projet</h2>
+        <p class="section-label">DERNIÈRE SURPRISE</p>
 
-    <div class="blue-line"></div>
+        <h2>Ouvre ça 🎁</h2>
 
+        <button class="gift-btn" onclick="openGift()">
+            Ouvrir la surprise
+        </button>
 
-    <div class="cards">
+        <div id="gift-message" class="hidden-gift">
 
-        <div class="card">
-            <div class="icon nginx">N</div>
-            <h3>Nginx</h3>
+            <div class="gift-box">🧖‍♀️</div>
+
+            <h3>Surprise ❤️</h3>
+
             <p>
-                Serveur web configuré avec
-                SSL et reverse proxy.
+                TAH mère et toi vous aurez un spa gratuit,
+                jsp quand 
             </p>
+
         </div>
 
-
-        <div class="card">
-            <div class="icon wordpress">W</div>
-            <h3>WordPress</h3>
-            <p>
-                CMS pour créer et gérer
-                mon site facilement.
-            </p>
-        </div>
+    </section>
 
 
-        <div class="card">
-            <div class="icon mariadb">◆</div>
-            <h3>MariaDB</h3>
-            <p>
-                Base de données pour
-                WordPress.
-            </p>
-        </div>
+    <footer>
 
+        <h3>Maria ❤️</h3>
 
-        <div class="card">
-            <div class="icon php">php</div>
-            <h3>PHP-FPM</h3>
-            <p>
-                Exécution des scripts PHP
-                de manière optimisée.
-            </p>
-        </div>
+        <p>
+            Créé avec beaucoup d'amour par Noé.
+        </p>
 
+        <div class="footer-line"></div>
 
-        <div class="card">
-            <div class="icon https">🔒</div>
-            <h3>HTTPS</h3>
-            <p>
-                Site sécurisé avec un
-                certificat SSL auto-signé.
-            </p>
-        </div>
+    </footer>
 
-    </div>
-
-</section>
-
-
-<section id="apropos" class="simple-section">
-
-    <div class="section-label">À PROPOS</div>
-
-    <h2>Noachour</h2>
-
-    <p>
-        Étudiant à l'école 42 et développeur en formation.
-        Je travaille sur différents projets liés au développement,
-        aux systèmes et à l'infrastructure.
-    </p>
-
-</section>
-
-
-<section id="projet" class="simple-section">
-
-    <div class="section-label">LE PROJET</div>
-
-    <h2>Inception</h2>
-
-    <p>
-        Le projet consiste à mettre en place une infrastructure
-        composée de Nginx, WordPress, PHP-FPM et MariaDB,
-        le tout fonctionnant avec Docker.
-    </p>
-
-</section>
-
-
-<footer id="contact">
-
-    <div class="footer-left">
-        <strong>NOACHOUR</strong>
-        <p>Projet Inception — École 42</p>
-    </div>
-
-    <div class="footer-links">
-        <a href="#accueil">Accueil</a>
-        <a href="#apropos">À propos</a>
-        <a href="#projet">Le projet</a>
-        <a href="#technologies">Technologies</a>
-        <a href="#contact">Contact</a>
-    </div>
-
-    <div class="logo42">42</div>
-
-</footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
